@@ -1,0 +1,4 @@
+[submodule "zk_machine"]
+	path = zk_machine
+	url = git@gitlab.com:juarez-technology/zk_machine.git
+	branch = 16.0
