@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates xml:space="preserve">
+    <t name="gbnaat_pos.PrintBillButton" owl="1" t-inherit="pos_restaurant.PrintBillButton" t-inherit-mode="extension">
+        <xpath expr="//span[hasclass('control-button')]" position="replace">
+            <span id="preimpresion_disable" class="control-button order-printbill" t-att-class="{ 'disabled-mode': enable_preimpresion}" t-att-disabled="enable_preimpresion">
+                <i class="fa fa-print"></i>
+                <span> </span>
+                <span>Account</span>
+            </span>
+            <span id="preimpresion_enable" class="control-button order-printbill" t-att-class="{ 'disabled-mode': enable_preimpresion}" t-att-disabled="enable_preimpresion">
+                <i class="fa fa-print"></i>
+                <span> </span>
+                <span>Preimpresión de recibo</span>
+            </span>
+
+        </xpath>
+    </t>
+</templates>
