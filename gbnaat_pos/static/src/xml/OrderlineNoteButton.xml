@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates xml:space="preserve">
+    <t name="gbnaat_pos.OrderlineNoteButton" owl="1" t-inherit="pos_restaurant.OrderlineNoteButton" t-inherit-mode="extension">
+        <xpath expr="//div[hasclass('control-button')]" position="replace">
+            <div id="folio_disable" class="control-button" t-att-class="{ 'disabled-mode': enable_folio}" t-att-disabled="enable_folio">
+                <i class="fa fa-sticky-note" />
+                <span> </span>
+                <span>Internal Note</span>
+            </div>
+            <div id="folio_enable" class="control-button" t-att-class="{ 'disabled-mode': enable_folio}" t-att-disabled="enable_folio">
+                <i class="fa fa-sticky-note" />
+                <span> </span>
+                <span>Folio de pedido</span>
+            </div>
+        </xpath>
+    </t>
+</templates>
