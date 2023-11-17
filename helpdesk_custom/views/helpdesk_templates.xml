@@ -123,6 +123,9 @@
                                                 <option value="os">Operating
                                                     System Problem
                                                 </option>
+                                                <option value="odoo">
+                                                    Error de Odoo
+                                                </option>
                                             </select>
                                         </div>
                                     </div>
