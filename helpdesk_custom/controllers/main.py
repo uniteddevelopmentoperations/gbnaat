@@ -31,7 +31,7 @@ class ContactController(WebsiteForm):
         for field_name, field_value in values.items():
             print(field_value)
             print(field_name)
-            if field_name in ['company_id', 'complaint_type']:
+            if field_name in ['company_select', 'complaint_type']:
                 data['record'][field_name] = field_value
             # If the value of the field if a file
             if hasattr(field_value, 'filename'):
