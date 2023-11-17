@@ -26,12 +26,34 @@ class WebsiteForm(http.Controller):
         company_select = post.get('company_select')
         teams = post.get('teams')
         if post:
-            print('submit_ticket_form')
-            request.env['helpdesk.ticket'].sudo().create({
-                # 'partner_id': partner_name.id,
-                'name': subject,
-                'partner_email': partner_email,
-                'complaint_type': complaint_type,
-                'company_select': company_select,
-            })
+            if company_select == 'gbnaat' or company_select == 'concesionaria' or company_select == 'sistemas' or company_select == 'promotora' or company_select == 'dust' or company_select == 'promociones':
+                print('submit_ticket_form')
+                request.env['helpdesk.ticket'].sudo().create({
+                    # 'partner_id': partner_name.id,
+                    'name': subject,
+                    'partner_email': partner_email,
+                    'complaint_type': complaint_type,
+                    'company_select': company_select,
+                    'team_id': 21,
+                })
+            elif company_select == 'rm' or company_select == 'rexmed' or company_select == 'medicar':
+                print('submit_ticket_form')
+                request.env['helpdesk.ticket'].sudo().create({
+                    # 'partner_id': partner_name.id,
+                    'name': subject,
+                    'partner_email': partner_email,
+                    'complaint_type': complaint_type,
+                    'company_select': company_select,
+                    'team_id': 22,
+                })
+            else:
+                print('submit_ticket_form')
+                request.env['helpdesk.ticket'].sudo().create({
+                    # 'partner_id': partner_name.id,
+                    'name': subject,
+                    'partner_email': partner_email,
+                    'complaint_type': complaint_type,
+                    'company_select': company_select,
+                    'team_id': 23,
+                })
         return request.render("helpdesk_support_custom.ticket_submited_custom")

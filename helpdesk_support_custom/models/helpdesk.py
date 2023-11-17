@@ -6,10 +6,10 @@ from odoo.exceptions import ValidationError
 class HelpdeskTicket(models.Model):
     _inherit = 'helpdesk.ticket'
 
-    complaint_type = fields.Selection(
-        [('hardware', 'Hardware Problem'), ('software', 'Software Problem'),
-         ('connection', 'Connection Problem'), ('security', 'Security Problem'),
-         ('os', 'Operating System Problem')], string='Complaint Type')
+    # complaint_type = fields.Selection(
+    #     [('hardware', 'Hardware Problem'), ('software', 'Software Problem'),
+    #      ('connection', 'Connection Problem'), ('security', 'Security Problem'),
+    #      ('os', 'Operating System Problem'),('odoo','Error de Odoo')], string='Complaint Type')
     # company_select = fields.Selection([
     #                 ('gbnaat', 'GB Soluciones Naat, S. de R.L. de C.V'),
     #                 ('concesionaria', 'Concesionaria El Encierro del Norte, S. de R.L. de C.V'),
