@@ -10,7 +10,7 @@
             </xpath>
             <xpath expr="//field[@name='partner_id']" position="before">
                 <field name="complaint_type"/>
-                <field name="company_id" string="Alternative Company" readonly="False"/>
+                <field name="company_select"/>
             </xpath>
         </field>
     </record>

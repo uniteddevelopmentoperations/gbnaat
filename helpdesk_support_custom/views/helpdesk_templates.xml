@@ -130,7 +130,7 @@
                                             </span>
                                         </label>
                                         <div class="col-sm">
-                                            <select name="company_id"
+                                            <!-- <select name="company_id"
                                                     id="company_id"
                                                     style="width:290px; height:45px"
                                                     class="advanced-select">
@@ -140,6 +140,41 @@
                                                     <option t-esc='company.name'
                                                             t-att-value="company.id"/>
                                                 </t>
+                                            </select> -->
+                                            <select name="company_select" id="company_select">
+                                                <option value="gbnaat">
+                                                    GB Soluciones Naat, S. de R.L. de C.V
+                                                </option>
+                                                <option value="concesionaria">
+                                                    Concesionaria El Encierro del Norte, S. de R.L. de C.V
+                                                </option>
+                                                <option value="sistemas">
+                                                    Sistemas Industrializados en Comedores, S. de R.L. de C.V
+                                                </option>
+                                                <option value="promotora">
+                                                    Promotora Misiones del Norte, S. de R.L. de C.V
+                                                </option>
+                                                <option value="dust">
+                                                    Dust Tex de Mexico, SA de CV
+                                                </option>
+                                                <option value="promociones">
+                                                    Promociones Delta Juarez S.A. de C.V.
+                                                </option>
+                                                <option value="rm">
+                                                    RM HealthCare Products S.A. de C.V.
+                                                </option>
+                                                <option value="rexmed">
+                                                    PJ Rex MED LLC.
+                                                </option>
+                                                <option value="medicar">
+                                                    Medicar Health Inc.
+                                                </option>
+                                                <option value="promisa">
+                                                    PROVEEDORA DE MATERIAL INDUSTRIAL
+                                                </option>
+                                                <option value="dmd">
+                                                    DMD CUSTOM CRATES BOXES INC.
+                                                </option>
                                             </select>
                                         </div>
                                     </div>

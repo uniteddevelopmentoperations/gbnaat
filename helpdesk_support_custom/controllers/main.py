@@ -23,7 +23,7 @@ class WebsiteForm(http.Controller):
         partner_email = post.get('partner_email')
         subject = post.get('name')
         complaint_type = post.get('complaint_type')
-        company_id = post.get('company_id')
+        company_select = post.get('company_select')
         teams = post.get('teams')
         if post:
             print('submit_ticket_form')
@@ -32,6 +32,6 @@ class WebsiteForm(http.Controller):
                 'name': subject,
                 'partner_email': partner_email,
                 'complaint_type': complaint_type,
-                'company_id': company_id,
+                'company_select': company_select,
             })
         return request.render("helpdesk_support_custom.ticket_submited_custom")
