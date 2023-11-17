@@ -14,17 +14,4 @@
             </xpath>
         </field>
     </record>
-    <record id="helpdesk_team_view_tree" model="ir.ui.view">
-        <field name="name">helpdesk.team.tree.inherit</field>
-        <field name="model">helpdesk.team</field>
-        <field name="inherit_id" ref="helpdesk.helpdesk_team_view_tree"/>
-        <field name="arch" type="xml">
-            <xpath expr="//tree" position="inside">
-                <header>
-                    <button name="method_update" type="object" string="Update"
-                            class="oe_highlight"/>
-                </header>
-            </xpath>
-        </field>
-    </record>
 </odoo>
