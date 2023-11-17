@@ -7,7 +7,7 @@
     'depends': ['website_helpdesk'],
     'data': [
         'data/website_menu.xml',
-        'views/helpdesk_views.xml',
+        # 'views/helpdesk_views.xml',
         'views/helpdesk_templates.xml'
     ],
     'installable': True,
