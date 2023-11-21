@@ -21,6 +21,7 @@ class HelpdeskTicket(models.Model):
                     ('rm', 'RM HealthCare Products S.A. de C.V.'),
                     ('rexmed', 'PJ Rex MED LLC.'),
                     ('medicar', 'Medicar Health Inc.'),
+                    ('mp','M&P Logictics LLC'),
                     ('promisa', 'PROVEEDORA DE MATERIAL INDUSTRIAL'),
                     ('dmd', 'DMD CUSTOM CRATES & BOXES INC.'),
                     ], string='Compañía Origen')
