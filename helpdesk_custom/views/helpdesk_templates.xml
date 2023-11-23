@@ -126,6 +126,9 @@
                                                 <option value="odoo">
                                                     Error de Odoo
                                                 </option>
+                                                <option value="req_odoo">
+                                                    Requerimiento Odoo
+                                                </option>
                                             </select>
                                         </div>
                                     </div>
