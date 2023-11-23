@@ -10,7 +10,7 @@ class HelpdeskTicket(models.Model):
     complaint_type = fields.Selection(
         [('hardware', 'Hardware Problem'), ('software', 'Software Problem'),
          ('connection', 'Connection Problem'), ('security', 'Security Problem'),
-         ('os', 'Operating System Problem'),('odoo','Error de Odoo')], string='Complaint Type')
+         ('os', 'Operating System Problem'),('odoo','Error de Odoo'),('req_odoo','Requerimiento Odoo')], string='Complaint Type')
     company_select = fields.Selection([
                     ('gbnaat', 'GB Soluciones Naat, S. de R.L. de C.V'),
                     ('concesionaria', 'Concesionaria El Encierro del Norte, S. de R.L. de C.V'),
