@@ -2,3 +2,7 @@
 	path = zk_machine
 	url = git@gitlab.com:juarez-technology/zk_machine.git
 	branch = 16.0
+[submodule "iocadiz"]
+	path = iocadiz
+	url = git@github.com:itadmin01/iocadiz.git
+    branch = 16.0
